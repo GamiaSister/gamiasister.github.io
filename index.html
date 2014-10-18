@@ -18,11 +18,13 @@
         /* Make it a marquee */
         /* Make it a marquee */
         .marquee {
-            font-size:x-large;
+            font-size: x-large;
             width: 350px;
             margin: 0 auto;
             overflow: hidden;
             white-space: nowrap;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
             -webkit-animation: marquee 50s linear infinite;
             -moz-animation: marquee 50s linear infinite;
@@ -32,6 +34,9 @@
         }
 
             .marquee:hover {
+                -moz-animation-play-state: paused;
+                -o-animation-play-state: paused;
+                -webkit-animation-play-state: paused;
                 animation-play-state: paused;
             }
 
@@ -121,7 +126,7 @@
         </div>
         <div class="marqueeContet">
             <p class="marquee">
-                六合縣有個六十六歲的陸老頭，蓋了六十六間樓， 買了六十六簍油，堆在六十六間樓， 栽了六十六株垂楊柳， 養了六十六頭牛，扣在六十六株垂楊柳。遇了一陣狂風起， 吹倒了六十六間樓， 翻了六十六簍油，斷了六十六株垂楊柳， 打死了六十六頭牛，急煞了六合縣的六十六歲的陸老頭。
+                椪柑先生歡迎大家來認識我們,了解我們,認同我們! 歡迎上粉絲團選購喔!!
             </p>
         </div>
     </div>
