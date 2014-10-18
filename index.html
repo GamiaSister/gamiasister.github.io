@@ -3,20 +3,127 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Gamia</title>
+    <link href="SliderPlug/js-image-slider.css" rel="stylesheet" />
+    <script src="SliderPlug/js-image-slider.js"></script>
+    <link href="Styles/MainStyle.css" rel="stylesheet" />
     <style type="text/css">
-        .content{
-          width:1024px;
-          height:768px;
-          max-height:768px;
-          max-width:1024px;
-          background:url(Images/Home.png);
-          margin-left:25%;
+        .DataContent {
+            width: 1024px;
+            height: 576px;
+            position: absolute;
+            background: url(Images/Home.png);
+            margin-top: 147px;
+            margin-left: 0px;
         }
+        /* Make it a marquee */
+        /* Make it a marquee */
+        .marquee {
+            font-size:x-large;
+            width: 350px;
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            -webkit-animation: marquee 50s linear infinite;
+            -moz-animation: marquee 50s linear infinite;
+            -ms-animation: marquee 50s linear infinite;
+            -o-animation: marquee 50s linear infinite;
+            animation: marquee 50s linear infinite;
+        }
+
+            .marquee:hover {
+                animation-play-state: paused;
+            }
+
+        /* Make it move */
+        @-webkit-keyframes marquee {
+            0% {
+                text-indent: 27.5em;
+            }
+
+            100% {
+                text-indent: -105em;
+            }
+        }
+
+        @-moz-keyframes marquee {
+            0% {
+                text-indent: 27.5em;
+            }
+
+            100% {
+                text-indent: -105em;
+            }
+        }
+
+        @-ms-keyframes marquee {
+            0% {
+                text-indent: 27.5em;
+            }
+
+            100% {
+                text-indent: -105em;
+            }
+        }
+
+        @-o-keyframes marquee {
+            0% {
+                text-indent: 27.5em;
+            }
+
+            100% {
+                text-indent: -105em;
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                text-indent: 27.5em;
+            }
+
+            100% {
+                text-indent: -105em;
+            }
+        }
+        .marqueeContet {
+            width: 355px;
+            position: absolute;
+            margin-top: 650px;
+            margin-left: 646px;
+        }
+     
     </style>
 </head>
 <body>
+   
     <div class="content">
-        <div class="menu"></div>
+        <div class="LeftBar"></div>
+        <div class="RightBar"></div>
+        <div class="DataContent"></div>
+        <div class="menu">
+            <div class="Btn Link1 action"><a href="index.html"></a></div>
+            <div class="Btn Link2"><a href="brand.html"></a></div>
+            <div class="Btn Link3"><a href="park.html"></a></div>
+            <div class="Btn Link4"><a href="gamia.html"></a></div>
+            <div class="Btn Link5"><a href="shop.html"></a></div>
+            
+        </div>
+        <div class="ImageSlider">
+            <div id="sliderFrame">
+                <div id="slider">
+                    <a href="http://www.menucool.com/javascript-image-slider" target="_blank">
+                        <img src="SliderImages/A.png" alt="1月份的茂谷" />
+                    </a>
+                    <img src="SliderImages/B.png" alt="8月份的椪柑" />
+                    <img src="SliderImages/C.png" alt="茂谷採收" />
+                </div>
+            </div>
+        </div>
+        <div class="marqueeContet">
+            <p class="marquee">
+                六合縣有個六十六歲的陸老頭，蓋了六十六間樓， 買了六十六簍油，堆在六十六間樓， 栽了六十六株垂楊柳， 養了六十六頭牛，扣在六十六株垂楊柳。遇了一陣狂風起， 吹倒了六十六間樓， 翻了六十六簍油，斷了六十六株垂楊柳， 打死了六十六頭牛，急煞了六合縣的六十六歲的陸老頭。
+            </p>
+        </div>
     </div>
 </body>
 </html>
