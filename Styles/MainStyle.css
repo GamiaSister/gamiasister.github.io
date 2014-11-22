@@ -1,0 +1,80 @@
+﻿/*Main BackGround*/     
+.content {
+    width: 1024px;
+    height: 768px;
+    background: url(../Images/Background.png);
+   margin: 0 auto;
+} 
+/*Menu Position*/    
+.menu {
+    position:absolute;
+    width: 688px;
+    height: 50px;
+    margin-top: 91px;
+    margin-left: 322px;
+}
+   .LeftBar {
+            position: absolute;
+            width: 239px;
+            height: 768px;
+            margin-left: -239px;
+            background: url(../Images/LeftBar.png);
+        }
+        .RightBar {
+            position: absolute;
+            width: 239px;
+            height: 768px;
+            margin-left: 1024px;
+            background: url(../Images/RightBar.png);
+        }
+.Btn {
+    height: 50px;
+    width: 137.6px;
+    position: absolute;
+}
+.Link1 {
+    background: url(../Images/Menu.png) 0px 0px;
+}
+.Link2 {
+    margin-left: 137.6px;
+    background: url(../Images/Menu.png) -137.6px 0px;
+}
+.Link3 {
+    margin-left: 275.2px;
+    background: url(../Images/Menu.png) -275.2px 0px;
+}
+.Link4 {
+    margin-left: 412.8px;
+    background: url(../Images/Menu.png) -412.8px 0px;
+}
+.Link5 {
+    margin-left: 550.4px;
+    background: url(../Images/Menu.png) -550.4px 0px;
+}
+.Btn:hover{
+     height: 55px;
+}
+.action{
+    background-position-y:-250px;
+}
+/*Home Image Slider Size*/
+.ImageSlider {
+    position: absolute;
+    width: 560px;
+    height: 400px;
+    margin-left: 330px;
+    margin-top: 180px;
+}
+/*For HyperLink*/
+    div a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
